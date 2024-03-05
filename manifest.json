@@ -1,0 +1,11 @@
+{
+  "name": "AI Playlist Images",
+  "description": "Quickly generate and save playlist images using DALL·E 3. (An OpenAI API key is required.)",
+  "preview": "preview.png",
+  "main": "dist/spicetify-ai-playlist-images.js",
+  "readme": "README.md",
+  "authors": [
+      { "name": "Scott Duffey", "url": "https://github.com/duffey" }
+  ],
+  "tags": ["playlist", "album", "art", "image", "ai", "dalle", "generative"]
+}
