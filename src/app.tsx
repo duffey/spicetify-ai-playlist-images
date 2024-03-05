@@ -115,7 +115,6 @@ async function main() {
         if (!url) return;
         url = 'https://corsproxy.org/?' + encodeURIComponent(url);
         const response = await fetch(url);
-        console.log(response);
         const blob = await response.blob();
 
         const file = new File([blob], "image.png", { type: "image/png" });
@@ -124,7 +123,6 @@ async function main() {
         fileInput.files = fileList.files;
         const event = new Event('change', { bubbles: true });
         fileInput.dispatchEvent(event);
-        console.log(fileInput);
       } finally {
         loadingOverlay.style.visibility = 'hidden';
       }
