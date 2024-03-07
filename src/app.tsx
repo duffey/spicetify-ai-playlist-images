@@ -128,7 +128,7 @@ async function main() {
       }
     },
     shouldAdd: (e) => {
-      return e?.children?.[0]?.props?.children === 'Change photo';
+      return e?.children?.length === 2;
     }
   });
 
