@@ -113,7 +113,7 @@ async function main() {
         const image = await openai.images.generate({ model: 'dall-e-3', prompt: `A playlist image for "${title}: ${description}." Do not include any text in the image."` });
         let url = image?.data?.[0]?.url;
         if (!url) return;
-        url = 'https://corsproxy.org/?' + encodeURIComponent(url);
+        url = 'https://cors-proxy.spicetify.app/' + url;
         const response = await fetch(url);
         const blob = await response.blob();
 
